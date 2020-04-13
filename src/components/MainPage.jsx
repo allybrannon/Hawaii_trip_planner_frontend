@@ -29,7 +29,7 @@ class MainPage extends Component {
         <br />
         <p>
           So that's where you come in- help us plan our trip by adding comments
-          and letting us know what you think we should do when we are there!
+          and letting us know what you think we should do while we are there!
         </p>
         <h2>The six islands of Hawaii</h2>
         <Carousel>
