@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import Kauai from "../images/Kauai.jpeg";
 import oahu from "../images/oahu.jpg";
@@ -16,7 +17,15 @@ class MainPage extends Component {
       son: "Watson",
     };
   }
+  loadData = async () => {
+    fetch("http://localhost:3000/all")
+      .then((res) => res.text())
+      .then((res) => this.setState({ apiResponse: res }));
+  };
 
+  async componentDidMount() {
+    this.loadData();
+  }
   render() {
     return (
       <div>
