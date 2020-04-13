@@ -5,24 +5,24 @@ import MainPage from "./components/MainPage";
 import Form from "./components/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/pages/About";
+import Comments from "../src/components/Comments";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <Header />
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/">
-            <MainPage />
-            <Form />
-          </Route>
-        </div>
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/">
+          <MainPage />
+          <Form />
+        </Route>
+      </div>
+      <Comments />
+    </Router>
+  );
 }
 
 export default App;
