@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 class Comments extends Component {
   state = {
@@ -14,25 +13,24 @@ class Comments extends Component {
   }
 
   async componentDidMount() {
-    const apiblog = await this.getInfo();
+    const comments = await this.getInfo();
     this.setState({
-      blog: apiblog,
+      comments: comments,
     });
   }
 
   render() {
-    const { info } = this.state;
-    console.log("comments:", info);
+    const { comments } = this.state;
+    console.log("comments:", Comments);
     return (
       <div>
         <ul>
-          {info.length > 0 ? (
-            info.map((info) => (
-              <li key={info.id}>
+          {comments.length > 0 ? (
+            comments.map((comments) => (
+              <li key={comments.id}>
                 <br />
-                <Link className="links" to={`/all/${info.id}`}>
-                  {info.user_name} {info.comment} {info.user_email}
-                </Link>
+                {comments.user_name} said: {comments.comment} user email:{" "}
+                {comments.user_email}
               </li>
             ))
           ) : (
