@@ -11,6 +11,10 @@ function Header() {
       |
       <Link style={linkStyle} to="/about">
         About
+      </Link>{" "}
+      |
+      <Link style={linkStyle} to="/comments">
+        Trip Comments
       </Link>
     </header>
   );

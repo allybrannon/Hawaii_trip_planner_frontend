@@ -27,46 +27,8 @@ class MainPage extends Component {
           and letting us know what you think we should do while we are there!
         </p>
         <h2>The six islands of Hawaii</h2>
-        <Carousel>
-          <Carousel.Item>
-            <img src={Kauai} alt="Kauai" height="300" width="400" />
-            <Carousel.Caption>
-              <a href="https://www.gohawaii.com/islands/kauai">Kauai</a>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={oahu} alt="Oahu" height="300" width="400" />
-            <Carousel.Caption>
-              <a href="https://www.gohawaii.com/islands/oahu">Oahu</a>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={bigisland} alt="Hawaii" height="300" width="400" />
-            <Carousel.Caption>
-              <a href="https://www.gohawaii.com/islands/hawaii-big-island">
-                Island of Hawaii
-              </a>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={maui} alt="maui" height="300" width="400" />
-            <Carousel.Caption>
-              <a href="https://www.gohawaii.com/islands/maui">Maui</a>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={molokai} alt="Molokai" height="300" width="400" />
-            <Carousel.Caption>
-              <a href="https://www.gohawaii.com/islands/molokai">Molokai</a>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={lanai} alt="Lanai" height="300" width="400" />
-            <Carousel.Caption>
-              <a href="https://www.gohawaii.com/islands/lanai">Lanai</a>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <p> insert data about islands</p>
+        <p> insert planned items</p>
       </div>
     );
   }

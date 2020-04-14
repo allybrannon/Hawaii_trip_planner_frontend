@@ -21,7 +21,6 @@ class Comments extends Component {
 
   render() {
     const { comments } = this.state;
-    console.log("comments:", Comments);
     return (
       <div>
         <ul>
