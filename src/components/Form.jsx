@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-const NewMessageForm = ({ onSend }) => {
-  const [inputText, setInputText] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
+const NewMessageForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert("clicked!");
-    const data = new FormData(event.target);
-
-    fetch("/", {
-      method: "POST",
-      body: data,
-    });
+    //onSend(inputText);
+    //setInputText("");
   };
   return (
     <div>
