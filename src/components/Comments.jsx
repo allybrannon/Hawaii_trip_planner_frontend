@@ -23,13 +23,12 @@ class Comments extends Component {
     const { comments } = this.state;
     return (
       <div>
-        <ul>
+        <ul style={list}>
           {comments.length > 0 ? (
             comments.map((comments) => (
               <li key={comments.id}>
-                <br />
-                {comments.user_name} said: {comments.comment} user email:{" "}
-                {comments.user_email}
+                <p style={user}>{comments.user_name} said: </p>
+                <p>"{comments.comment}"</p>
               </li>
             ))
           ) : (
@@ -40,5 +39,12 @@ class Comments extends Component {
     );
   }
 }
+const list = {
+  listStyle: "none",
+};
+
+const user = {
+  fontWeight: "bold",
+};
 
 export default Comments;

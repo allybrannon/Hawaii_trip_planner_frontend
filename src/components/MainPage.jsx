@@ -29,14 +29,20 @@ class MainPage extends Component {
             we are there!
           </p>
         </div>
-        <h2 style={header2}>The Beautiful Hawaiin Islands</h2>
+        <h2 style={header2}>The Beautiful Hawaiian Islands</h2>
         <div style={islands}>
           <p style={islandPic}>
             <img src={Kauai} alt="Kauai" height="200" width="300" />
             <ul style={list}>
               <li style={listOne}>
                 Things to do in
-                <a href="https://www.gohawaii.com/islands/kauai"> Kauai:</a>
+                <a
+                  href="https://www.gohawaii.com/islands/kauai"
+                  target="_blank"
+                >
+                  {" "}
+                  Kauai:
+                </a>
               </li>
               <li>Beaches, of course!</li>
               <li>Zipline Tours</li>
@@ -51,7 +57,10 @@ class MainPage extends Component {
             <ul style={list}>
               <li style={listOne}>
                 Things to do in
-                <a href="https://www.gohawaii.com/islands/oahu"> Oahu</a>{" "}
+                <a href="https://www.gohawaii.com/islands/oahu" target="_blank">
+                  {" "}
+                  Oahu
+                </a>{" "}
               </li>
               <li>City visit: Honolulu</li>
               <li>Hiking volcanoes</li>
@@ -66,7 +75,10 @@ class MainPage extends Component {
             <ul style={list}>
               <li style={listOne}>
                 Things to do in the
-                <a href="https://www.gohawaii.com/islands/hawaii-big-island">
+                <a
+                  href="https://www.gohawaii.com/islands/hawaii-big-island"
+                  target="_blank"
+                >
                   {" "}
                   Island of Hawaii
                 </a>
@@ -84,7 +96,10 @@ class MainPage extends Component {
             <ul style={list}>
               <li style={listOne}>
                 Things to do in
-                <a href="https://www.gohawaii.com/islands/maui"> Maui</a>{" "}
+                <a href="https://www.gohawaii.com/islands/maui" target="_blank">
+                  {" "}
+                  Maui
+                </a>{" "}
               </li>
               <li>Haleakala National Park</li>
               <li>Stand Up Paddle Boarding</li>
@@ -98,7 +113,13 @@ class MainPage extends Component {
             <ul style={list}>
               <li style={listOne}>
                 Things to do in
-                <a href="https://www.gohawaii.com/islands/molokai"> Molokai</a>
+                <a
+                  href="https://www.gohawaii.com/islands/molokai"
+                  target="_blank"
+                >
+                  {" "}
+                  Molokai
+                </a>
               </li>
               <li>Beaches, of course!</li>
               <li>Kalaupapa National Historical Park</li>
@@ -112,7 +133,13 @@ class MainPage extends Component {
             <ul style={list}>
               <li style={listOne}>
                 Things to do in
-                <a href="https://www.gohawaii.com/islands/lanai"> Lanai</a>
+                <a
+                  href="https://www.gohawaii.com/islands/lanai"
+                  target="_blank"
+                >
+                  {" "}
+                  Lanai
+                </a>
               </li>
               <li>Hiking</li>
               <li>Off-Road Adventures</li>
@@ -145,13 +172,14 @@ const header2 = {
 };
 
 const islands = {
+  display: "flex",
   margin: "20px",
+  flexWrap: "wrap",
+  justifyContent: "center",
 };
 
 const islandPic = {
-  display: "flex",
   margin: "24px",
-  alignContent: "center",
 };
 
 const secondP = {

@@ -44,40 +44,44 @@ const NewMessageForm = () => {
 
   return (
     <div>
-      <div>
-        We want your comments, suggestions, and feedback! Tell us what we should
-        do!
+      <div style={container}>
+        <div style={input}>
+          We want your comments and suggestions Tell us what we should do while
+          in Hawaii!
+        </div>
+        <br />
+        <form onSubmit={handleSubmit}>
+          <input
+            style={inputStyleName}
+            type="text"
+            name="user_name"
+            placeholder="name"
+            onChange={changeUserName}
+            required
+          />
+          <input
+            style={inputStyleComment}
+            type="text"
+            name="comment"
+            placeholder="your comments"
+            onChange={changeComment}
+            required
+          />
+          <input
+            style={inputStyleName}
+            type="text"
+            name="user_email"
+            placeholder="email"
+            onChange={changeEmail}
+            required
+          />
+          <div style={b1}>
+            <button style={buttonStyle} type="submit">
+              Send
+            </button>
+          </div>
+        </form>
       </div>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          style={inputStyleName}
-          type="text"
-          name="user_name"
-          placeholder="your name"
-          onChange={changeUserName}
-          required
-        />
-        <input
-          style={inputStyleComment}
-          type="text"
-          name="comment"
-          placeholder="your comments"
-          onChange={changeComment}
-          required
-        />
-        <input
-          style={inputStyleName}
-          type="text"
-          name="user_email"
-          placeholder="your email"
-          onChange={changeEmail}
-          required
-        />
-        <button style={buttonStyle} type="submit">
-          Send
-        </button>
-      </form>
     </div>
   );
 };
@@ -87,14 +91,32 @@ const buttonStyle = {
   backgroundColor: "grey",
   color: "white",
 };
+
+const b1 = {
+  display: "flex",
+  justifyContent: "center",
+};
+
+const container = {
+  borderRadius: "5px",
+  backgroundColor: "#f2f2f2",
+  padding: "20px",
+};
+
 const inputStyleComment = {
   width: "50%",
   borderRadius: "4px",
+  padding: "12px 16px",
 };
 
 const inputStyleName = {
   width: "25%",
   borderRadius: "4px",
+  padding: "12px 12px",
+};
+
+const input = {
+  textAlign: "center",
 };
 
 export default NewMessageForm;
