@@ -22,9 +22,7 @@ const NewMessageForm = () => {
     const url = "http://localhost:3000/addcomment";
 
     const response = await postAPI(url, data);
-    if (response.status === 200) {
-      alert("Response logged!");
-    }
+
     if (response.status !== 200) {
       alert("Response was unable to be logged. Please try again later.");
     }
@@ -46,11 +44,11 @@ const NewMessageForm = () => {
     <div>
       <div style={container}>
         <div style={input}>
-          We want your comments and suggestions Tell us what we should do while
+          We want your comments and suggestions. Tell us what we should do while
           in Hawaii!
         </div>
         <br />
-        <form onSubmit={handleSubmit}>
+        <form id="newForm" onSubmit={handleSubmit}>
           <input
             style={inputStyleName}
             type="text"
@@ -106,17 +104,18 @@ const container = {
 const inputStyleComment = {
   width: "50%",
   borderRadius: "4px",
-  padding: "12px 16px",
+  padding: "8px 16px",
 };
 
 const inputStyleName = {
   width: "25%",
   borderRadius: "4px",
-  padding: "12px 12px",
+  padding: "8px 12px",
 };
 
 const input = {
   textAlign: "center",
+  fontFamily: "Raleway, sans-serif",
 };
 
 export default NewMessageForm;

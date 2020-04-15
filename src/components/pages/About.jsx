@@ -15,7 +15,7 @@ function About() {
         <img src={family} alt="Family" height="auto" width="70%" />
       </div>
       <h3 style={about}>With Love,</h3>
-      <h3 style={about}>Ally, Alexis, and Watson</h3>
+      <h3 style={about}>Alexis, Ally, and Watson</h3>
       <p style={para}>
         This project was made by{" "}
         <a href="https://github.com/allybrannon">Ally Brannon</a>.
@@ -27,11 +27,13 @@ function About() {
 }
 const about = {
   textAlign: "center",
+  fontFamily: "Raleway, sans-serif",
 };
 
 const para = {
   textAlign: "center",
   fontSize: "20px",
+  fontFamily: "Raleway, sans-serif",
 };
 
 const picture = {

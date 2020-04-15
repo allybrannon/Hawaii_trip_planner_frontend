@@ -34,6 +34,7 @@ const headerStyle = {
 const linkStyle = {
   color: "#fff",
   textDecoration: "none",
+  fontFamily: "Assistant, sans-serif",
 };
 
 export default Header;
