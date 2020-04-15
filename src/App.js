@@ -6,6 +6,7 @@ import Form from "./components/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/pages/About";
 import Comments from "../src/components/Comments";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/">
           <MainPage />
           <Form />
+          <Footer />
         </Route>
       </div>
     </Router>

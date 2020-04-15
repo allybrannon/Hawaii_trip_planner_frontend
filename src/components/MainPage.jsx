@@ -15,59 +15,158 @@ class MainPage extends Component {
     return (
       <div>
         <h1 style={header1}>We want you to help us plan our dream vacation.</h1>
-        <p>
-          In 2019, we decided we wanted to take a trip to Hawaii. So, we began
-          planning that trip. We had originally set to travel in May of 2020,
-          but for now, we will have to wait...
-        </p>
-        <br />
-        <p>
-          So that's where you come in- help us plan our trip by adding comments
-          and letting us know what you think we should do while we are there!
-        </p>
-        <h2 style={header2}>The beautiful islands of Hawaii</h2>
-        <p>
-          <img src={Kauai} alt="Kauai" height="200" width="300" />
-          <a href="https://www.gohawaii.com/islands/kauai">Kauai</a>
-        </p>
-        <br />
-        <p>
-          <img src={oahu} alt="Oahu" height="200" width="300" />
-          <a href="https://www.gohawaii.com/islands/oahu">Oahu</a>
-        </p>
-        <br />
-        <p>
-          <img src={bigisland} alt="Hawaii" height="200" width="300" />
-          <a href="https://www.gohawaii.com/islands/hawaii-big-island">
-            Island of Hawaii
-          </a>
-        </p>
-        <br />
-        <p>
-          <img src={maui} alt="maui" height="200" width="300" />
-          <a href="https://www.gohawaii.com/islands/maui">Maui</a>
-        </p>
-        <br />
-        <p>
-          <img src={molokai} alt="Molokai" height="200" width="300" />
-          <a href="https://www.gohawaii.com/islands/molokai">Molokai</a>
-        </p>
-        <br />
-        <img src={lanai} alt="Lanai" height="200" width="300" />
-        <a href="https://www.gohawaii.com/islands/lanai">Lanai</a>
-        <br />
+        <div style={firstP}>
+          <p>
+            In 2019, we decided we wanted to take a trip to Hawaii. So, we began
+            planning that trip. We had originally set to travel in May of 2020,
+            but for now, we will have to wait...
+          </p>
+        </div>
+        <div style={secondP}>
+          <p>
+            So that's where you come in- <b>help us plan our trip</b> by adding
+            comments below and letting us know what you think we should do while
+            we are there!
+          </p>
+        </div>
+        <h2 style={header2}>The Beautiful Hawaiin Islands</h2>
+        <div style={islands}>
+          <p style={islandPic}>
+            <img src={Kauai} alt="Kauai" height="200" width="300" />
+            <ul style={list}>
+              <li style={listOne}>
+                Things to do in
+                <a href="https://www.gohawaii.com/islands/kauai"> Kauai:</a>
+              </li>
+              <li>Beaches, of course!</li>
+              <li>Zipline Tours</li>
+              <li>Mountain Tubing</li>
+              <li>Kayaking</li>
+            </ul>
+          </p>
+
+          <br />
+          <p style={islandPic}>
+            <img src={oahu} alt="Oahu" height="200" width="300" />
+            <ul style={list}>
+              <li style={listOne}>
+                Things to do in
+                <a href="https://www.gohawaii.com/islands/oahu"> Oahu</a>{" "}
+              </li>
+              <li>City visit: Honolulu</li>
+              <li>Hiking volcanoes</li>
+              <li>Luau</li>
+              <li>Surfing</li>
+              <li>Pearl Harbor Tour</li>
+            </ul>
+          </p>
+          <br />
+          <p style={islandPic}>
+            <img src={bigisland} alt="Hawaii" height="200" width="300" />
+            <ul style={list}>
+              <li style={listOne}>
+                Things to do in the
+                <a href="https://www.gohawaii.com/islands/hawaii-big-island">
+                  {" "}
+                  Island of Hawaii
+                </a>
+              </li>
+              <li>Waterfall Tour</li>
+              <li>Snorkeling and Kayaking</li>
+              <li>Visit a coffee farm</li>
+              <li>Twilight Volcano and Stargazing tour</li>
+              <li>Horseback riding</li>
+            </ul>
+          </p>
+          <br />
+          <p style={islandPic}>
+            <img src={maui} alt="maui" height="200" width="300" />
+            <ul style={list}>
+              <li style={listOne}>
+                Things to do in
+                <a href="https://www.gohawaii.com/islands/maui"> Maui</a>{" "}
+              </li>
+              <li>Haleakala National Park</li>
+              <li>Stand Up Paddle Boarding</li>
+              <li>Rafting</li>
+              <li>Bike Maui Guided Tour</li>
+            </ul>
+          </p>
+          <br />
+          <p style={islandPic}>
+            <img src={molokai} alt="Molokai" height="200" width="300" />
+            <ul style={list}>
+              <li style={listOne}>
+                Things to do in
+                <a href="https://www.gohawaii.com/islands/molokai"> Molokai</a>
+              </li>
+              <li>Beaches, of course!</li>
+              <li>Kalaupapa National Historical Park</li>
+              <li>Kapuaiwa Coconut Grove</li>
+            </ul>
+          </p>
+          <br />
+          <p style={islandPic}>
+            <img src={lanai} alt="Lanai" height="200" width="300" />
+
+            <ul style={list}>
+              <li style={listOne}>
+                Things to do in
+                <a href="https://www.gohawaii.com/islands/lanai"> Lanai</a>
+              </li>
+              <li>Hiking</li>
+              <li>Off-Road Adventures</li>
+              <li>Mountain Tubing</li>
+              <li>Keahiakawelo Park </li>
+            </ul>
+          </p>
+        </div>
       </div>
     );
   }
 }
 
-const header1 = {
-  fontFamily: "Quicksand, sans-serif",
+const firstP = {
+  margin: "20px",
   textAlign: "center",
 };
-const header2 = {
-  fontSize: "24px",
+
+const header1 = {
+  fontFamily: "Assistant, sans-serif",
   textAlign: "center",
+  fontSize: "30px",
+};
+
+const header2 = {
+  fontFamily: "Assistant, sans-serif",
+  fontSize: "26px",
+  textAlign: "center",
+  textDecoration: "underline",
+};
+
+const islands = {
+  margin: "20px",
+};
+
+const islandPic = {
+  display: "flex",
+  margin: "24px",
+  alignContent: "center",
+};
+
+const secondP = {
+  margin: "20px",
+  textAlign: "center",
+};
+
+const list = {
+  margin: "20",
+};
+
+const listOne = {
+  margin: "20",
+  listStyleType: "none",
+  textDecoration: "underline",
 };
 
 export default MainPage;

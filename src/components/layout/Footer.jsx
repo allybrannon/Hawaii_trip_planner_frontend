@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Footer() {
   return (
-    <header style={headerStyle}>
-      <h1 style={h1Style}>Welcome to our Hawaii Trip Planner!</h1>
+    <footer style={footerStyle}>
+      <h1 style={h1Style}>Please leave us a comment</h1>
       <Link style={linkStyle} to="/">
         Home
       </Link>{" "}
@@ -16,15 +16,15 @@ function Header() {
       <Link style={linkStyle} to="/comments">
         Trip Comments
       </Link>
-    </header>
+    </footer>
   );
 }
 
 const h1Style = {
-  fontFamily: "Satisfy",
-  fontSize: "50px",
+  fontFamily: "Satisfy, cursive",
+  fontSize: "30px",
 };
-const headerStyle = {
+const footerStyle = {
   background: "#458eed",
   color: "#fff",
   textAlign: "center",
@@ -36,4 +36,4 @@ const linkStyle = {
   textDecoration: "none",
 };
 
-export default Header;
+export default Footer;
