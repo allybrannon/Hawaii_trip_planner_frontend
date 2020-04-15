@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { findByLabelText } from "@testing-library/react";
+
 const NewMessageForm = () => {
   const [username, setUserName] = useState("");
   const [comment, setComment] = useState("");
@@ -46,8 +48,10 @@ const NewMessageForm = () => {
         We want your comments, suggestions, and feedback! Tell us what we should
         do!
       </div>
+
       <form onSubmit={handleSubmit}>
         <input
+          style={inputStyleName}
           type="text"
           name="user_name"
           placeholder="your name"
@@ -55,6 +59,7 @@ const NewMessageForm = () => {
           required
         />
         <input
+          style={inputStyleComment}
           type="text"
           name="comment"
           placeholder="your comments"
@@ -62,15 +67,34 @@ const NewMessageForm = () => {
           required
         />
         <input
+          style={inputStyleName}
           type="text"
           name="user_email"
           placeholder="your email"
           onChange={changeEmail}
           required
         />
-        <button type="submit">Send</button>
+        <button style={buttonStyle} type="submit">
+          Send
+        </button>
       </form>
     </div>
   );
 };
+
+const buttonStyle = {
+  borderRadius: "6px",
+  backgroundColor: "grey",
+  color: "white",
+};
+const inputStyleComment = {
+  width: "50%",
+  borderRadius: "4px",
+};
+
+const inputStyleName = {
+  width: "25%",
+  borderRadius: "4px",
+};
+
 export default NewMessageForm;

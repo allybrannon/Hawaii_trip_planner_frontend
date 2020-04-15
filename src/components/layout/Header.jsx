@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header style={headerStyle}>
-      <h1>Welcome to our Hawaii Trip Planner!</h1>
+      <h1 style={h1Style}>Welcome to our Hawaii Trip Planner!</h1>
       <Link style={linkStyle} to="/">
         Home
       </Link>{" "}
@@ -20,8 +20,11 @@ function Header() {
   );
 }
 
+const h1Style = {
+  fontFamily: "Satisfy, cursive",
+};
 const headerStyle = {
-  background: "#333",
+  background: "#458eed",
   color: "#fff",
   textAlign: "center",
   padding: "10px",

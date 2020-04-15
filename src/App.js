@@ -5,7 +5,7 @@ import MainPage from "./components/MainPage";
 import Form from "./components/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/pages/About";
-import Feedback from "../src/components/pages/Feedback";
+import Comments from "../src/components/Comments";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <About />
         </Route>
         <Route exact path="/comments">
-          <Feedback />
+          <Comments />
         </Route>
         <Route exact path="/">
           <MainPage />
