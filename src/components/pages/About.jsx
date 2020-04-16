@@ -14,11 +14,14 @@ function About() {
       <div style={picture}>
         <img src={family} alt="Family" height="auto" width="70%" />
       </div>
-      <h3 style={about}>With Love,</h3>
-      <h3 style={about}>Alexis, Ally, and Watson</h3>
+      <h5 style={about}>With Love,</h5>
+      <h5 style={about}>Alexis, Ally, and Watson</h5>
       <p style={para}>
         This project was made by{" "}
-        <a href="https://github.com/allybrannon">Ally Brannon</a>.
+        <a href="https://github.com/allybrannon" target="_blank">
+          Ally Brannon
+        </a>
+        .
       </p>
       <Form />
       <Footer />

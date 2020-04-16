@@ -59,6 +59,7 @@ const Form = () => {
             placeholder="name"
             onChange={changeUserName}
             required
+            data-testid="messageText"
           />
           <input
             style={inputStyleComment}
