@@ -1,6 +1,7 @@
 This is my solo project for DigitalCrafts January 2020 Cohort.  In this project, I used React to create a front-end for a trip my family and I have been planning for over a year.  Due to the outbreak of COVID-19, we have had to postpone our trip.  I thought this would be a great opportunity for us to get ideas and feedback from friends and family on what we should do when we travel to Hawaii.
 
-![HawaiiPlanner1](https://user-images.githubusercontent.com/58038239/79392633-b127d180-7f41-11ea-8a0c-802dc98193d2.png)
+![Hawaii Planner 2020-04-16 15-05-18](https://user-images.githubusercontent.com/58038239/79496271-e3920700-7ff3-11ea-8bb2-335527ab0f05.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
