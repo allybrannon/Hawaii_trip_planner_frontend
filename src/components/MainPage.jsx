@@ -28,14 +28,13 @@ function MainPage() {
       <div style={islands}>
         <p style={islandPic}>
           <img src={Kauai} alt="Kauai" height="200" width="300" />
+          <p style={listOne}>
+            <a href="https://www.gohawaii.com/islands/kauai" target="_blank">
+              {" "}
+              Things to do in Kauai:
+            </a>
+          </p>
           <ul style={list}>
-            <li style={listOne}>
-              Things to do in
-              <a href="https://www.gohawaii.com/islands/kauai" target="_blank">
-                {" "}
-                Kauai:
-              </a>
-            </li>
             <li>Beaches, of course!</li>
             <li>Zipline Tours</li>
             <li>Mountain Tubing</li>
@@ -46,14 +45,13 @@ function MainPage() {
         <br />
         <p style={islandPic}>
           <img src={oahu} alt="Oahu" height="200" width="300" />
+          <p style={listOne}>
+            <a href="https://www.gohawaii.com/islands/oahu" target="_blank">
+              {" "}
+              Things to do in Oahu
+            </a>{" "}
+          </p>
           <ul style={list}>
-            <li style={listOne}>
-              Things to do in
-              <a href="https://www.gohawaii.com/islands/oahu" target="_blank">
-                {" "}
-                Oahu
-              </a>{" "}
-            </li>
             <li>City visit: Honolulu</li>
             <li>Hiking volcanoes</li>
             <li>Luau</li>
@@ -64,17 +62,16 @@ function MainPage() {
         <br />
         <p style={islandPic}>
           <img src={bigisland} alt="Hawaii" height="200" width="300" />
+          <p style={listOne}>
+            <a
+              href="https://www.gohawaii.com/islands/hawaii-big-island"
+              target="_blank"
+            >
+              {" "}
+              Things to do on the Island of Hawaii
+            </a>
+          </p>
           <ul style={list}>
-            <li style={listOne}>
-              Things to do in the
-              <a
-                href="https://www.gohawaii.com/islands/hawaii-big-island"
-                target="_blank"
-              >
-                {" "}
-                Island of Hawaii
-              </a>
-            </li>
             <li>Waterfall Tour</li>
             <li>Snorkeling and Kayaking</li>
             <li>Visit a coffee farm</li>
@@ -85,14 +82,14 @@ function MainPage() {
         <br />
         <p style={islandPic}>
           <img src={maui} alt="maui" height="200" width="300" />
+
+          <p style={listOne}>
+            <a href="https://www.gohawaii.com/islands/maui" target="_blank">
+              {" "}
+              Things to do in Maui
+            </a>{" "}
+          </p>
           <ul style={list}>
-            <li style={listOne}>
-              Things to do in
-              <a href="https://www.gohawaii.com/islands/maui" target="_blank">
-                {" "}
-                Maui
-              </a>{" "}
-            </li>
             <li>Haleakala National Park</li>
             <li>Stand Up Paddle Boarding</li>
             <li>Rafting</li>
@@ -102,17 +99,14 @@ function MainPage() {
         <br />
         <p style={islandPic}>
           <img src={molokai} alt="Molokai" height="200" width="300" />
+
+          <p style={listOne}>
+            <a href="https://www.gohawaii.com/islands/molokai" target="_blank">
+              {" "}
+              Things to do in Molokai
+            </a>
+          </p>
           <ul style={list}>
-            <li style={listOne}>
-              Things to do in
-              <a
-                href="https://www.gohawaii.com/islands/molokai"
-                target="_blank"
-              >
-                {" "}
-                Molokai
-              </a>
-            </li>
             <li>Beaches, of course!</li>
             <li>Kalaupapa National Historical Park</li>
             <li>Kapuaiwa Coconut Grove</li>
@@ -121,15 +115,13 @@ function MainPage() {
         <br />
         <p style={islandPic}>
           <img src={lanai} alt="Lanai" height="200" width="300" />
-
+          <p style={listOne}>
+            <a href="https://www.gohawaii.com/islands/lanai" target="_blank">
+              {" "}
+              Things to do in Lanai
+            </a>
+          </p>
           <ul style={list}>
-            <li style={listOne}>
-              Things to do in
-              <a href="https://www.gohawaii.com/islands/lanai" target="_blank">
-                {" "}
-                Lanai
-              </a>
-            </li>
             <li>Hiking</li>
             <li>Off-Road Adventures</li>
             <li>Mountain Tubing</li>
@@ -148,6 +140,7 @@ const firstP = {
 };
 
 const header1 = {
+  margin: "20px",
   fontFamily: "Raleway, sans-serif",
   textAlign: "center",
   fontSize: "30px",
@@ -162,13 +155,12 @@ const header2 = {
 
 const islands = {
   display: "flex",
-  margin: "20px",
   flexWrap: "wrap",
   justifyContent: "center",
 };
 
 const islandPic = {
-  margin: "24px",
+  margin: "30px",
 };
 
 const secondP = {
@@ -178,14 +170,13 @@ const secondP = {
 };
 
 const list = {
-  margin: "20",
   fontFamily: "Raleway, sans-serif",
+  textAlign: "left",
 };
 
 const listOne = {
-  margin: "20",
-  listStyleType: "none",
   textDecoration: "underline",
+  textAlign: "center",
 };
 
 export default MainPage;

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Form from "../components/Form";
+import Footer from "../components/layout/Footer";
 
 class Comments extends Component {
   state = {
@@ -35,16 +37,25 @@ class Comments extends Component {
             <li>No Data</li>
           )}
         </ul>
+        <div style={form}>
+          <Form />
+          <Footer />
+        </div>
       </div>
     );
   }
 }
 const list = {
   listStyle: "none",
+  margin: "40px",
 };
 
 const user = {
   fontWeight: "bold",
+};
+
+const form = {
+  positon: "absolute",
 };
 
 export default Comments;

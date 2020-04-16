@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { findByLabelText } from "@testing-library/react";
 
-const NewMessageForm = () => {
+const Form = () => {
   const [username, setUserName] = useState("");
   const [comment, setComment] = useState("");
   const [email, setEmail] = useState("");
@@ -17,12 +17,15 @@ const NewMessageForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const data = { user_name: username, comment: comment, user_email: email };
     const url = "http://localhost:3000/addcomment";
 
     const response = await postAPI(url, data);
 
+    if (response.status === 200) {
+      alert("Thank you for your comment!");
+    }
     if (response.status !== 200) {
       alert("Response was unable to be logged. Please try again later.");
     }
@@ -118,4 +121,4 @@ const input = {
   fontFamily: "Raleway, sans-serif",
 };
 
-export default NewMessageForm;
+export default Form;
