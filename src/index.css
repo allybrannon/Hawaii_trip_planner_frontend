@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-image: url(../src/images/malu_pattern.jpg);
+  background-repeat: no-repeat;
+  background-size: 4% 100%;
+  background-position-y: top;
+}

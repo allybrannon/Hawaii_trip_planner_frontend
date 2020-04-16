@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Form from "./Form";
-import Footer from "./layout/Footer";
 
 class Comments extends Component {
   state = {

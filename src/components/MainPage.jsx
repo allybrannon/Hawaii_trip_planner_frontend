@@ -142,7 +142,7 @@ function MainPage() {
 }
 
 const firstP = {
-  margin: "20px",
+  margin: "60px",
   textAlign: "center",
   fontFamily: "Raleway, sans-serif",
 };
@@ -172,7 +172,7 @@ const islandPic = {
 };
 
 const secondP = {
-  margin: "20px",
+  margin: "60px",
   textAlign: "center",
   fontFamily: "Raleway, sans-serif",
 };
