@@ -30,7 +30,6 @@ function MainPage() {
           <img src={Kauai} alt="Kauai" height="200" width="300" />
           <p style={listOne}>
             <a href="https://www.gohawaii.com/islands/kauai" target="_blank">
-              {" "}
               Things to do in Kauai:
             </a>
           </p>
@@ -47,9 +46,8 @@ function MainPage() {
           <img src={oahu} alt="Oahu" height="200" width="300" />
           <p style={listOne}>
             <a href="https://www.gohawaii.com/islands/oahu" target="_blank">
-              {" "}
               Things to do in Oahu
-            </a>{" "}
+            </a>
           </p>
           <ul style={list}>
             <li>City visit: Honolulu</li>
@@ -67,7 +65,6 @@ function MainPage() {
               href="https://www.gohawaii.com/islands/hawaii-big-island"
               target="_blank"
             >
-              {" "}
               Things to do on the Island of Hawaii
             </a>
           </p>
@@ -75,19 +72,17 @@ function MainPage() {
             <li>Waterfall Tour</li>
             <li>Snorkeling and Kayaking</li>
             <li>Visit a coffee farm</li>
-            <li>Twilight Volcano and Stargazing tour</li>
+            <li>Twilight Volcano & Stargazing tour</li>
             <li>Horseback riding</li>
           </ul>
         </p>
         <br />
         <p style={islandPic}>
           <img src={maui} alt="maui" height="200" width="300" />
-
           <p style={listOne}>
             <a href="https://www.gohawaii.com/islands/maui" target="_blank">
-              {" "}
               Things to do in Maui
-            </a>{" "}
+            </a>
           </p>
           <ul style={list}>
             <li>Haleakala National Park</li>
@@ -102,7 +97,6 @@ function MainPage() {
 
           <p style={listOne}>
             <a href="https://www.gohawaii.com/islands/molokai" target="_blank">
-              {" "}
               Things to do in Molokai
             </a>
           </p>
@@ -117,7 +111,6 @@ function MainPage() {
           <img src={lanai} alt="Lanai" height="200" width="300" />
           <p style={listOne}>
             <a href="https://www.gohawaii.com/islands/lanai" target="_blank">
-              {" "}
               Things to do in Lanai
             </a>
           </p>
