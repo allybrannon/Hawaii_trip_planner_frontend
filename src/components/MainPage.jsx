@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Kauai from "../images/Kauai.jpeg";
 import oahu from "../images/oahu.jpg";
 import bigisland from "../images/bigisland.jpeg";
@@ -26,29 +26,29 @@ function MainPage() {
       </div>
       <h2 style={header2}>The Beautiful Hawaiian Islands</h2>
       <div style={islands}>
-        <p style={islandPic}>
+        <div style={islandPic}>
           <img src={Kauai} alt="Kauai" height="200" width="300" />
-          <p style={listOne}>
+          <div style={listOne}>
             <a href="https://www.gohawaii.com/islands/kauai" target="_blank">
               Things to do in Kauai:
             </a>
-          </p>
+          </div>
           <ul style={list}>
             <li>Beaches, of course!</li>
             <li>Zipline Tours</li>
             <li>Mountain Tubing</li>
             <li>Kayaking</li>
           </ul>
-        </p>
+        </div>
 
         <br />
-        <p style={islandPic}>
+        <div style={islandPic}>
           <img src={oahu} alt="Oahu" height="200" width="300" />
-          <p style={listOne}>
+          <div style={listOne}>
             <a href="https://www.gohawaii.com/islands/oahu" target="_blank">
-              Things to do in Oahu
+              Things to do in Oahu:
             </a>
-          </p>
+          </div>
           <ul style={list}>
             <li>City visit: Honolulu</li>
             <li>Hiking volcanoes</li>
@@ -56,18 +56,18 @@ function MainPage() {
             <li>Surfing</li>
             <li>Pearl Harbor Tour</li>
           </ul>
-        </p>
+        </div>
         <br />
-        <p style={islandPic}>
+        <div style={islandPic}>
           <img src={bigisland} alt="Hawaii" height="200" width="300" />
-          <p style={listOne}>
+          <div style={listOne}>
             <a
               href="https://www.gohawaii.com/islands/hawaii-big-island"
               target="_blank"
             >
               Things to do on the Island of Hawaii
             </a>
-          </p>
+          </div>
           <ul style={list}>
             <li>Waterfall Tour</li>
             <li>Snorkeling and Kayaking</li>
@@ -75,52 +75,52 @@ function MainPage() {
             <li>Twilight Volcano & Stargazing tour</li>
             <li>Horseback riding</li>
           </ul>
-        </p>
+        </div>
         <br />
-        <p style={islandPic}>
+        <div style={islandPic}>
           <img src={maui} alt="maui" height="200" width="300" />
-          <p style={listOne}>
+          <div style={listOne}>
             <a href="https://www.gohawaii.com/islands/maui" target="_blank">
               Things to do in Maui
             </a>
-          </p>
+          </div>
           <ul style={list}>
             <li>Haleakala National Park</li>
             <li>Stand Up Paddle Boarding</li>
             <li>Rafting</li>
             <li>Bike Maui Guided Tour</li>
           </ul>
-        </p>
+        </div>
         <br />
-        <p style={islandPic}>
+        <div style={islandPic}>
           <img src={molokai} alt="Molokai" height="200" width="300" />
 
-          <p style={listOne}>
+          <div style={listOne}>
             <a href="https://www.gohawaii.com/islands/molokai" target="_blank">
               Things to do in Molokai
             </a>
-          </p>
+          </div>
           <ul style={list}>
             <li>Beaches, of course!</li>
             <li>Kalaupapa National Historical Park</li>
             <li>Kapuaiwa Coconut Grove</li>
           </ul>
-        </p>
+        </div>
         <br />
-        <p style={islandPic}>
+        <div style={islandPic}>
           <img src={lanai} alt="Lanai" height="200" width="300" />
-          <p style={listOne}>
+          <div style={listOne}>
             <a href="https://www.gohawaii.com/islands/lanai" target="_blank">
               Things to do in Lanai
             </a>
-          </p>
+          </div>
           <ul style={list}>
             <li>Hiking</li>
             <li>Off-Road Adventures</li>
             <li>Mountain Tubing</li>
             <li>Keahiakawelo Park </li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   );
